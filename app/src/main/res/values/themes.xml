@@ -22,4 +22,9 @@
     <style name="Theme.College.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.College.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="navigation_theme">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorControlHighlight">@color/ColorPrimaryDark</item>
+    </style>
 </resources>

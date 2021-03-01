@@ -11,6 +11,7 @@
     <color name="colorPrimary">#011C38</color>
     <color name="ColorPrimaryDark">#bbbbbb</color>
     <color name="ColorAccent">#ffe3d8</color>
+    <color name="red">#E91E63</color>
 
     <color name="card_one_userdash">#D2B2D8</color>
     <color name="card_two_userdash">#B3C7D8</color>

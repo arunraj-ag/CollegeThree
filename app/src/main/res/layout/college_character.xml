@@ -12,7 +12,7 @@
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:padding="10dp"
-        android:background="@drawable/card_one_userdash">
+        android:background="@drawable/card_three_userdash">
 
         <ImageView
             android:id="@+id/college_banner_img"
@@ -20,7 +20,7 @@
             android:layout_height="150dp"
             android:contentDescription="Anti Ragging"
             android:src="@drawable/anti_ragging"
-            android:background="@color/white"
+            android:background="@color/card_three_userdash"
             android:scaleType="fitCenter"/>
         <TextView
             android:id="@+id/college_card_title"
