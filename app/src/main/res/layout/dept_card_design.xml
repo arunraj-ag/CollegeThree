@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dept_img"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/cse"
+                android:scaleType="centerCrop"
+                android:contentDescription="cse_img_icon" />
+            <TextView
+                android:id="@+id/dept_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Computer Science &amp; Engineering"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:fontFamily="@font/josefin_regular"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/dept_desc"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/josefin_regular"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:text="Dazzling coders"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/coll_char"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:background="@drawable/card_one_userdash">
+
+        <ImageView
+            android:id="@+id/college_banner_img"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:contentDescription="Anti Ragging"
+            android:src="@drawable/anti_ragging"
+            android:background="@color/white"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/college_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AntiRagging"
+            android:layout_toRightOf="@+id/college_banner_img"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/josefin_regular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/college_card_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anti Ragging Committee helps to stop ragging activities in our College"
+            android:layout_toRightOf="@id/college_banner_img"
+            android:layout_below="@id/college_card_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefin_regular"
+            android:lineSpacingExtra="4sp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

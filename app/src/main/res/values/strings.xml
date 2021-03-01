@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">College</string>
+    <string name="logo_name">AUBIT</string>
+    <string name="slogan_name">Mob</string>
+    <string name="splash_screen">splash screen</string>
+
+
+    <!-- String for On Boarding Screen-->
+
+    <string name="first_slide_title">A mobile Companion for AUBIT</string>
+    <string name="seond_slide_title">Integrated Voting and Attendance</string>
+
+    <!-- String for Description-->
+
+    <string name="first_slide_desc">Using this you can access what\'s happening in our college</string>
+    <string name="second_slide_desc">You can mark your attendance using AUBIT and you can vote your opinions to decisions in College</string>
+
+    <!-- Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+    <string name="splash_img_view">splash_img_view</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="a_slider_img">A Slider Image</string>
+    <string name="search_string">Search...</string>
+    <string name="search_bar_userdash">search_bar</string>
+    <string name="menu_bar">menu_bar</string>
+    <string name="mechanical">Mechanical</string>
+    <string name="CSE">CSE</string>
+    <string name="automob">Automobile</string>
+    <string name="EEE">EEE</string>
+    <string name="featured_locations">All Departments</string>
+    <string name="featured_locations_description">All the descriptions of departments are here..</string>
+    <string name="most_viewed_locations">Most Viewed</string>
+    <string name="view_all">View All</string>
+    <string name="categories">Categories</string>
+    <string name="title_activity_comp_science">comp_science</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="featured_list_of_all_departments">Featured List of All Departments</string>
+
+</resources>

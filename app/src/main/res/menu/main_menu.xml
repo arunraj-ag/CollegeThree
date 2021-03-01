@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_icon_navbar"/>
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search"
+            android:icon="@drawable/search_userdash_black"/>
+        <item
+            android:id="@+id/nav_all_categories"
+            android:title="All Categories"
+            android:icon="@drawable/allcategory_icon_navbar"/>
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"
+                    android:icon="@drawable/login_icon_navbar"/>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/profile_icon_navbar"/>
+                <item
+                    android:id="@+id/log_out"
+                    android:title="Logout"
+                    android:icon="@drawable/logout_icon_navbar"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share"
+                    android:icon="@drawable/share_icon_navbar"/>
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:title="Comment"
+                    android:icon="@drawable/comment_icon_navbar"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
