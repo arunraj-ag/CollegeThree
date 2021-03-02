@@ -25,7 +25,7 @@ public class CollegeAdapter extends RecyclerView.Adapter<CollegeAdapter.collegeV
     @Override
     public collegeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.college_character,parent,false);
-        return new collegeViewHolder(view);
+        return new collegeViewHolder(view) ;
     }
 
     @Override
