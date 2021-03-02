@@ -15,6 +15,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.college.Common.LoginSignup.StartUpScreen;
 import com.example.college.HelperClasses.CollegeCharacters.CollegeAdapter;
 import com.example.college.HelperClasses.CollegeCharacters.CollegeHelperClass;
 import com.example.college.HelperClasses.HomeAdapter.DeptAdapter;
@@ -60,6 +61,9 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         collegeRecycler();
     }
 
+
+
+
     //NavigationDrawerSection
     private void navigationDrawer() {
         //Navigation Drawer
@@ -73,7 +77,6 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         });
         animateNavigationDrawer();
     }
-
     private void animateNavigationDrawer() {
 
         //Add any color or remove it to use the default one!
@@ -99,7 +102,6 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         });
 
     }
-
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
@@ -107,7 +109,6 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         } else
             super.onBackPressed();
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -117,6 +118,9 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         }
         return true;
     }
+
+
+
 
 
     //Department RecyclerSection
@@ -145,7 +149,6 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         adapter = new DeptAdapter(deptLocations, this);
         deptRecycler.setAdapter(adapter);
     }
-
     @Override
     public void onDeptClick(int position) {
         deptLocations.get(position);
@@ -176,5 +179,10 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         }
     }
 
+
+
+    public void callProfessorScreen(View view){
+        startActivity(new Intent(getApplicationContext(), StartUpScreen.class));
+    }
 
 }
