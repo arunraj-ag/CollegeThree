@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Features"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:contentDescription="@string/back_arrow" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_userdash_black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="15dp"
+                android:contentDescription="@string/search_bar_userdash" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_roadmap"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_one"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/roadmap_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roadmap"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roadmap_useme"
+                    android:layout_below="@+id/roadmap_card_title"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/roadmap_img"
+                    android:contentDescription="@string/roadmap_img" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_near_store"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_two"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/near_store_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nearby_store"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_details_from_nearby_store_and_use_it"
+                    android:layout_below="@+id/near_store_card_title"
+                    android:fontFamily="@font/josefin_regular"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/store_images"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_chat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_three"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/chat_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_your_opinions_on_queries_created_by_faculties"
+                    android:layout_below="@+id/chat_card_title"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/query_img"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_four"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/placement_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placement"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_eventual_updates_about_placements_in_our_college"
+                    android:layout_below="@+id/placement_card_title"
+                    android:fontFamily="@font/josefin_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/placement_img"
+                    android:contentDescription="@string/placement_img" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

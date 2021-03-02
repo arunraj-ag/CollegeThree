@@ -33,7 +33,7 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
     ArrayList<CollegeHelperClass> collegeLocations = new ArrayList<>();
     //asas
     ImageView menuIcon;
-    static  final  float END_SCALE = 0.7f;
+    static final float END_SCALE = 0.7f;
     //DrawerMenu
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -68,7 +68,7 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         navigationView.setCheckedItem(R.id.nav_home);
         menuIcon.setOnClickListener(v -> {
             if (drawerLayout.isDrawerVisible(GravityCompat.START))
-                 drawerLayout.closeDrawer(GravityCompat.START);
+                drawerLayout.closeDrawer(GravityCompat.START);
             else drawerLayout.openDrawer(GravityCompat.START);
         });
         animateNavigationDrawer();
@@ -102,14 +102,19 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
 
     @Override
     public void onBackPressed() {
-        if (drawerLayout.isDrawerVisible(GravityCompat.START)){
+        if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else
+        } else
             super.onBackPressed();
     }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_features:
+                startActivity(new Intent(getApplicationContext(), Features.class));
+                break;
+        }
         return true;
     }
 
@@ -140,6 +145,7 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
         adapter = new DeptAdapter(deptLocations, this);
         deptRecycler.setAdapter(adapter);
     }
+
     @Override
     public void onDeptClick(int position) {
         deptLocations.get(position);
@@ -153,7 +159,6 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
             startActivity(intent);
         }
     }
-
 
 
     //CollegeRecyclerSection
@@ -170,8 +175,6 @@ public class UserDashboard extends AppCompatActivity implements DeptAdapter.onDe
             collegeRecycler.setAdapter(adapter);
         }
     }
-
-
 
 
 }

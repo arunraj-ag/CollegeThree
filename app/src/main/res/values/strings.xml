@@ -46,5 +46,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="featured_list_of_all_departments">Featured List of All Departments</string>
+    <string name="back_arrow">back_arrow</string>
+    <string name="roadmap_img">roadmap_img</string>
+    <string name="roadmap">ROADMAP</string>
+    <string name="roadmap_useme">Don\'t know how to go?Use me to get there</string>
+    <string name="get_details_from_nearby_store_and_use_it">Get details from nearby store and use it</string>
+    <string name="nearby_store">NEARBY STORE</string>
+    <string name="query">QUERY</string>
+    <string name="answer_your_opinions_on_queries_created_by_faculties">Answer your opinions on queries created by faculties</string>
+    <string name="get_eventual_updates_about_placements_in_our_college">Get eventual updates about placements in our college</string>
+    <string name="placement">PLACEMENT</string>
+    <string name="placement_img">placement_img</string>
 
 </resources>

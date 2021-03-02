@@ -11,8 +11,8 @@
             android:title="Search"
             android:icon="@drawable/search_userdash_black"/>
         <item
-            android:id="@+id/nav_all_categories"
-            android:title="All Categories"
+            android:id="@+id/nav_features"
+            android:title="Features"
             android:icon="@drawable/allcategory_icon_navbar"/>
     </group>
 
