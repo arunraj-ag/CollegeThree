@@ -59,5 +59,6 @@
     <string name="placement_img">placement_img</string>
     <string name="professors_are_the_best">Professors are the Best</string>
     <string name="how_it_works">How It works?</string>
+    <string name="login_text">Login</string>
 
 </resources>
